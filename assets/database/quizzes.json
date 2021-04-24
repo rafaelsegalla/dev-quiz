@@ -9,17 +9,20 @@
         "title": "O que o Flutter faz em sua totalidade?",
         "awnsers": [
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
+            "title": "Possibilita a criação de aplicativos compilados nativamente 1.",
+            "isRight": false
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
+            "title": "Possibilita a criação de aplicativos compilados nativamente 2.",
+            "isRight": false
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente.",
+            "title": "Possibilita a criação de aplicativos compilados nativamente 3.",
             "isRight": true
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
+            "title": "Possibilita a criação de aplicativos compilados nativamente 4.",
+            "isRight": false
           }
         ]
       },
@@ -27,17 +30,20 @@
         "title": "O que o Flutter faz em sua totalidade?",
         "awnsers": [
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
-          },
-          {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
-          },
-          {
-            "title": "Possibilita a criação de aplicativos compilados nativamente.",
+            "title": "Possibilita a criação de aplicativos compilados nativamente 1.",
             "isRight": true
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente."
+            "title": "Possibilita a criação de aplicativos compilados nativamente 2.",
+            "isRight": false
+          },
+          {
+            "title": "Possibilita a criação de aplicativos compilados nativamente 3.",
+            "isRight": false
+          },
+          {
+            "title": "Possibilita a criação de aplicativos compilados nativamente 4.",
+            "isRight": false
           }
         ]
       }

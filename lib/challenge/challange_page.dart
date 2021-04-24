@@ -1,27 +1,132 @@
+import 'package:dev_quiz/challenge/challenge_controller.dart';
+import 'package:dev_quiz/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:dev_quiz/challenge/widgets/question_indicator/question_indicator_widget.dart';
 import 'package:dev_quiz/challenge/widgets/quiz/quiz_widget.dart';
+import 'package:dev_quiz/result/result_page.dart';
+import 'package:dev_quiz/shared/models/question_model.dart';
 import 'package:flutter/material.dart';
 
 class ChallengePage extends StatefulWidget {
-  const ChallengePage({Key? key}) : super(key: key);
+  final List<QuestionModel> questions;
+  final String title;
+
+  ChallengePage({
+    Key? key,
+    required this.questions,
+    required this.title,
+  }) : super(key: key);
 
   @override
   _ChallengePageState createState() => _ChallengePageState();
 }
 
 class _ChallengePageState extends State<ChallengePage> {
+  final controller = ChallengeController();
+  final pageController = PageController();
+
+  @override
+  void initState() {
+    pageController.addListener(() {
+      controller.currentPage = pageController.page!.toInt() + 1;
+    });
+    super.initState();
+  }
+
+  void nextPage() {
+    if (controller.currentPage < widget.questions.length)
+      pageController.nextPage(
+        duration: Duration(milliseconds: 700),
+        curve: Curves.linearToEaseOut,
+      );
+  }
+
+  void onSelected(bool isRight) {
+    if (isRight) {
+      controller.totalRightAnswers++;
+    }
+
+    nextPage();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: SafeArea(top: true, child: QuestionIndicatorWidget()),
+        preferredSize: Size.fromHeight(102),
+        child: SafeArea(
+            top: true,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.close),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+                ValueListenableBuilder<int>(
+                  valueListenable: controller.currentPageNotifier,
+                  builder: (context, value, _) => QuestionIndicatorWidget(
+                    currentPage: value,
+                    length: widget.questions.length,
+                  ),
+                ),
+              ],
+            )),
       ),
-      body: Column(
-        children: [
-          SizedBox(height: 24,),
-          QuizWidget(title: "O que o Flutter faz em sua totalidade?",),
-        ],
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: pageController,
+        children: widget.questions
+            .map(
+              (e) => QuizWidget(
+                question: e,
+                onSelected: onSelected,
+              ),
+            )
+            .toList(),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20, right: 20, bottom: 15),
+          child: ValueListenableBuilder<int>(
+            valueListenable: controller.currentPageNotifier,
+            builder: (context, value, _) => Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                if (value < widget.questions.length)
+                  Expanded(
+                    child: NextButtonWidget.white(
+                      label: "Pular",
+                      onTap: nextPage,
+                    ),
+                  ),
+                if (value == widget.questions.length)
+                  SizedBox(
+                    width: 7,
+                  ),
+                if (value == widget.questions.length)
+                  Expanded(
+                    child: NextButtonWidget.greenDark(
+                      label: "Confirmar",
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ResultPage(
+                              title: widget.title,
+                              length: widget.questions.length,
+                              totalRightAwnsers: controller.totalRightAnswers,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

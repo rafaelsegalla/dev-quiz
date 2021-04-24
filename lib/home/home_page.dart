@@ -1,3 +1,4 @@
+import 'package:dev_quiz/challenge/challange_page.dart';
 import 'package:dev_quiz/core/app_colors.dart';
 import 'package:dev_quiz/home/home_controller.dart';
 import 'package:dev_quiz/home/home_state.dart';
@@ -71,6 +72,16 @@ class _HomePageState extends State<HomePage> {
                             image: e.image,
                             total: e.questions.length,
                             completed: e.questionAnswered,
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ChallengePage(
+                                      questions: e.questions,
+                                      title: e.title,
+                                    ),
+                                  ));
+                            },
                           ))
                       .toList(),
                 ),
