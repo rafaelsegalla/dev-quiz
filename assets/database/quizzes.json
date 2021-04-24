@@ -1,48 +1,618 @@
 [
   {
-    "title": "NLW 5 Flutter",
-    "questionAnswered": 1,
-    "image": "assets/images/data.png",
+    "title": "Desenvolvimento Web",
+    "questionAnswered": 0,
+    "image": "assets/images/laptop.png",
     "level": "easy",
     "questions": [
       {
-        "title": "O que o Flutter faz em sua totalidade?",
+        "title": "Escolha a alternativa correta:",
         "awnsers": [
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 1.",
+            "title": "HTML é um programa que favorece o desenvolvimento de arquivos CSS.",
             "isRight": false
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 2.",
-            "isRight": false
-          },
-          {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 3.",
+            "title": "HTML e CSS são as tecnologias utilizadas na construção de páginas da Web: HTML (html e xhtml) para a estrutura, CSS para o estilo e layout, incluindo WebFonts.",
             "isRight": true
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 4.",
+            "title": "Ambos são os conceitos fundamentais aplicados em dados abertos conectados.",
+            "isRight": true
+          },
+          {
+            "title": "CSS é uma linguagem de programação poderosa e requer HTML para seu funcionamento.",
             "isRight": false
           }
         ]
       },
       {
-        "title": "O que o Flutter faz em sua totalidade?",
+        "title": "A propriedade display na linguagem CSS3 especifica como um elemento será exibido no layout da página web. Comparado ao display:block, a principal diferença é que o display:inline-block:",
         "awnsers": [
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 1.",
+            "title": "Não permite definir uma largura e altura para o elemento.",
+            "isRight": false
+          },
+          {
+            "title": "Exibe parte do elemento da página na horizontal e parte na vertical.",
+            "isRight": false
+          },
+          {
+            "title": "Não adiciona quebra de linha após o elemento, permitindo que este se ajuste ao lado de outros elementos.",
             "isRight": true
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 2.",
+            "title": "Adiciona quebra de linha após o elemento, não permitindo que este se ajuste ao lado de outros elementos.",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "JavaScript trabalha com números usando os operadores aritméticos fornecidos pela própria linguagem. No entanto, a linguagem aceita operações matemáticas mais complexas por meio de um conjunto de funções e constantes definidas como propriedades do objeto Math.\nEscolha a opção que apresenta a função que permite realizar, em JavaScript, a operação matemática de arredondar para cima o número 1,17, obtendo-se o valor 2.",
+        "awnsers": [
+          {
+            "title": "Math.ceil()",
             "isRight": false
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 3.",
+            "title": "Math.exp()",
+            "isRight": true
+          },
+          {
+            "title": "Math.pow()",
             "isRight": false
           },
           {
-            "title": "Possibilita a criação de aplicativos compilados nativamente 4.",
+            "title": "Math.round()",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa que contém apenas frameworks (contendo pacotes, classes e conjunto ferramental de suporte) utilizados para desenvolver soluções em PHP.",
+        "awnsers": [
+          {
+            "title": ".Net e Zend",
+            "isRight": false
+          },
+          {
+            "title": "SignalR e .NET",
+            "isRight": false
+          },
+          {
+            "title": "JHipster e Laravel",
+            "isRight": false
+          },
+          {
+            "title": "Laravel e Zend",
+            "isRight": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Estrutura de Dados",
+    "questionAnswered": 0,
+    "image": "assets/images/blocks.png",
+    "level": "expert",
+    "questions": [
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Banco de Dados",
+    "questionAnswered": 0,
+    "image": "assets/images/data.png",
+    "level": "medium",
+    "questions": [
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Análise de Sistemas",
+    "questionAnswered": 0,
+    "image": "assets/images/hierarchy.png",
+    "level": "hard",
+    "questions": [
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
+            "isRight": false
+          }
+        ]
+      },
+      {
+        "title": "Escolha a alternativa correta:",
+        "awnsers": [
+          {
+            "title": "A",
+            "isRight": false
+          },
+          {
+            "title": "B",
+            "isRight": true
+          },
+          {
+            "title": "C",
+            "isRight": true
+          },
+          {
+            "title": "D",
             "isRight": false
           }
         ]
